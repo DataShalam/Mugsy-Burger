@@ -1,0 +1,225 @@
+/***********************/
+/*** Product heading ***/
+/***********************/
+.product--headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 32px;
+
+  margin-bottom: 24px;
+}
+
+.product--headline__title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #000;
+
+  text-align: center;
+}
+
+.product--headline__description {
+  width: 85%;
+  display: flex;
+  align-items: stretch;
+  flex: 1 1 auto;
+  gap: 14px;
+}
+
+.product--headline__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 800;
+
+  padding: 18px;
+  background-color: #eee;
+}
+
+/************************/
+/*** product calories ***/
+/************************/
+.section--calories {
+  padding: 32px 16px;
+  display: flex;
+
+  gap: 32px;
+
+  margin-bottom: 128px;
+}
+
+.product--calories__container {
+  display: flex;
+
+  gap: 16px;
+}
+
+.product--calories__content {
+  margin-left: 64px;
+  padding: 24px 0 24px 18px;
+  border-left: 1px solid #000;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+
+  gap: 18px;
+  row-gap: 64px;
+}
+
+.product--calories__content > div {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.product--calories__title {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+
+  text-align: start;
+}
+
+.calorie--title {
+  width: 180px;
+  font-size: 16px;
+  text-wrap: wrap;
+  color: #000;
+}
+
+.calorie--number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
+.calorie--number__following {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+/***************************/
+/*** product ingredients ***/
+/***************************/
+.section--ingredients {
+  padding: 32px 16px;
+  margin-bottom: 128px;
+}
+
+.product--ingredients__includes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 22px;
+  margin-bottom: 64px;
+}
+
+.product--ingredients__includes div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line--small {
+  content: " ";
+  width: 5px;
+  height: 24px;
+  background-color: #bbb;
+  border-radius: 3px;
+  margin: 0 14px;
+}
+
+.rounded--includes {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #ffbc0d;
+  margin-right: 8px;
+}
+
+.rounded--not--includes {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  margin-right: 8px;
+}
+
+.ingredient--circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+
+  margin-right: 8px;
+}
+
+.ingredient--circle__active {
+  background-color: #ffbc0d;
+}
+
+.product--ingredients__container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+  row-gap: 24px;
+}
+
+.product--ingredients__container > div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 0 1 calc(25% - 1rem);
+  box-sizing: border-box;
+}
+
+/******************************/
+/*** Other Burgers Carousel ***/
+/******************************/
+.section--burger--carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 164px;
+}
+
+.section--burger--carousel__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section--burger--carousel__image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}

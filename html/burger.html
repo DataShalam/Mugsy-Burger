@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/burgerPage.css" />
+    <link rel="stylesheet" href="../css/active.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header--top">
+        <select class="header--select" name="language">
+          <option value="en">ENG</option>
+          <option value="ka">GEO</option>
+          <option value="ru">РУС</option>
+        </select>
+        <div class="header--top__logo">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="Mugsy's burger logo" />
+          </a>
+        </div>
+        <div>
+          <input
+            class="header--input"
+            type="text"
+            placeholder="ძებნა"
+            class="header--top__search"
+          />
+        </div>
+      </div>
+      <div class="header--bottom">
+        <nav>
+          <ul class="header--bottom__nav">
+            <li>ჩვენი პროდუქტები</li>
+            <li>ჩვენ შესახებ</li>
+            <li>ჩვენი სერვისები</li>
+            <li>
+              <span
+                ><img
+                  src="../icons/icon.svg"
+                  alt="location SVG"
+                  class="location--svg" /></span
+              >ლოკაცია
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header--burger--menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="header--bottom__mobile">
+        <ul>
+          <li><a href="./burger.html">ჩვენი პროდუქტები</a></li>
+          <li>ჩვენ შესახებ</li>
+          <li>ჩვენი სერვისები</li>
+          <li>ლოკაცია</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="product--headline">
+        <h2 class="product--headline__title">ბეკონ-ჰალაპენიო ბურგერი</h2>
+        <div>
+          <img
+            class="product--headline__image"
+            src="../images/burger-example.png"
+            alt="ბეკონ-ჰალაპენიო ბურგერი"
+          />
+        </div>
+        <div class="product--headline__description">
+          <div
+            id="calories-btn"
+            class="product--headline__option menu--btn__active"
+          >
+            კვებითი ღირებულება
+          </div>
+          <div id="ingredients-btn" class="product--headline__option">
+            ინგრედიენტები
+          </div>
+        </div>
+      </section>
+
+      <section class="section--calories">
+        <div class="product--calories__container">
+          <div class="product--calories__title">
+            <p>პორციაში</p>
+          </div>
+          <div class="product--calories__content">
+            <div>
+              <p class="calorie--title">ენერგეტიკული ღირებულება (კლჯ)</p>
+              <p class="calorie--number">
+                3212.00 <span class="calorie--number__following">კჯ</span>
+              </p>
+            </div>
+            <div>
+              <p class="calorie--title">ენერგეტიკული ღირებულება (კკალ)</p>
+              <p class="calorie--number">
+                769.00 <span class="calorie--number__following">კკალ</span>
+              </p>
+            </div>
+            <div>
+              <p class="calorie--title">ცხიმები (გრ)</p>
+              <p class="calorie--number">
+                45.00 <span class="calorie--number__following">გრ</span>
+              </p>
+            </div>
+            <div>
+              <p class="calorie--title">ნაჯერი ცხიმები (გრ)</p>
+              <p class="calorie--number">
+                21.00 <span class="calorie--number__following">გრ</span>
+              </p>
+            </div>
+            <div>
+              <p class="calorie--title">ნახშირწყლები (გრ)</p>
+              <p class="calorie--number">
+                41.00 <span class="calorie--number__following">გრ</span>
+              </p>
+            </div>
+            <div>
+              <p class="calorie--title">შაქრები (გრ)</p>
+              <p class="calorie--number">
+                11.00 <span class="calorie--number__following">გრ</span>
+              </p>
+            </div>
+            <div>
+              <p class="calorie--title">უჯრედისი (გრ)</p>
+              <p class="calorie--number">
+                2.00 <span class="calorie--number__following">გრ</span>
+              </p>
+            </div>
+            <div>
+              <p class="calorie--title">ცილები (გრ)</p>
+              <p class="calorie--number">
+                48.00 <span class="calorie--number__following">გრ</span>
+              </p>
+            </div>
+            <div>
+              <p class="calorie--title">მარილი (გრ)</p>
+              <p class="calorie--number">
+                3.10 <span class="calorie--number__following">გრ</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--ingredients display--none">
+        <div class="product--ingredients__includes">
+          <div>
+            <span class="rounded--includes"></span>შეიცავს კონკრეტულ ინგრედიენტს
+          </div>
+          <div class="line--small"></div>
+          <div>
+            <span class="rounded--not--includes"></span>არ შეიცავს კონკრეტულ
+            ინგრედიენტს
+          </div>
+        </div>
+        <div class="product--ingredients__container">
+          <div>
+            <div class="ingredient--circle ingredient--circle__active">
+              <img src="../images/svg-bottle.png" alt="მდოგვი (Mustard)" />
+            </div>
+            <p>მდოგვი</p>
+          </div>
+          <div>
+            <div class="ingredient--circle ingredient--circle__active">
+              <img src="../images/svg-bottle.png" alt="მაიონეზი (Mayonnaise)" />
+            </div>
+            <p>მაიონეზი</p>
+          </div>
+          <div>
+            <div class="ingredient--circle ingredient--circle__active">
+              <img src="../images/svg-bottle.png" alt="კეტჩუპი (Ketchup)" />
+            </div>
+            <p>კეტჩუპი</p>
+          </div>
+          <div>
+            <div class="ingredient--circle ingredient--circle__active">
+              <img
+                src="../images/svg-bottle.png"
+                alt="ყველის სოუზი (Cheese Sauce)"
+              />
+            </div>
+            <p>ყველის სოუზი</p>
+          </div>
+          <div>
+            <div class="ingredient--circle">
+              <img src="../images/svg-nut.png" alt="თხილი (Nut)" />
+            </div>
+            <p>თხილი</p>
+          </div>
+          <div>
+            <div class="ingredient--circle">
+              <img src="../images/svg-nut.png" alt="არაქისი (Peanut)" />
+            </div>
+            <p>არაქისი</p>
+          </div>
+          <div>
+            <div class="ingredient--circle">
+              <img src="../images/svg-nut.png" alt="ნუში (Almond)" />
+            </div>
+            <p>ნუში</p>
+          </div>
+          <div>
+            <div class="ingredient--circle ingredient--circle__active">
+              <img src="../images/svg-corn.png" alt="ხორბალი (Wheat)" />
+            </div>
+            <p>ხორბალი</p>
+          </div>
+          <div>
+            <div class="ingredient--circle">
+              <img src="../images/svg-corn.png" alt="შვრია (Oat)" />
+            </div>
+            <p>შვრია</p>
+          </div>
+          <div>
+            <div class="ingredient--circle ingredient--circle__active">
+              <img src="../images/svg-milk.png" alt="რძე (Milk)" />
+            </div>
+            <p>რძე</p>
+          </div>
+          <div>
+            <div class="ingredient--circle">
+              <img src="../images/svg-fish.png" alt="თევზი (Fish)" />
+            </div>
+            <p>თევზი</p>
+          </div>
+          <div>
+            <div class="ingredient--circle ingredient--circle__active">
+              <img src="../images/svg-egg.png" alt="კვერცხი (Egg)" />
+            </div>
+            <p>კვერცხი</p>
+          </div>
+        </div>
+      </section>
+      <section class="section--burger--carousel">
+        <h2 class="section--burger--carousel__title">სხვა ბურგერები</h2>
+        <div class="splide" id="burger-carousel">
+          <div class="splide__track">
+            <ul class="splide__list section--burger--carousel__container"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer--container">
+        <div class="footer--logo">
+          <img src="../images/Mugsy's footer icon.png" alt="" />
+        </div>
+        <div class="footer--navigation__desktop">
+          <p class="footer--navigation">ნავიგაცია</p>
+          <div class="footer--navigation__list">
+            <ul>
+              <li>ჩვენი პროდუქტები</li>
+              <li>მაგსი მენიუ</li>
+              <li>მაგსი კაფე</li>
+              <li>კარიერა</li>
+            </ul>
+            <ul>
+              <li>აპლიკაცია</li>
+              <li>სიახლეები</li>
+              <li>რესტორნები</li>
+            </ul>
+            <ul>
+              <li>მაგსიდელივერი</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer--navigation__all">
+          <div class="footer--icon">
+            <img src="../icons/facebook.png" alt="" />
+          </div>
+          <div class="footer--icon">
+            <img src="../icons/instagram.png" alt="" />
+          </div>
+          <div class="footer--icon">
+            <img src="../icons/linkedin.png" alt="" />
+          </div>
+          <div class="footer--icon">
+            <img src="../icons/youtube.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/burgerListener.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="../js/burgerCarousel.js"></script>
+  </body>
+</html>
