@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/mainPage.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <title>Mugsy's burger</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header--top">
+        <select class="header--select" name="language">
+          <option value="en">ENG</option>
+          <option value="ka">GEO</option>
+          <option value="ru">РУС</option>
+        </select>
+        <div class="header--top__logo">
+          <img src="./images/logo.png" alt="Mugsy's burger logo" />
+        </div>
+        <div>
+          <input
+            class="header--input"
+            type="text"
+            placeholder="ძებნა"
+            class="header--top__search"
+          />
+        </div>
+      </div>
+      <div class="header--bottom">
+        <nav>
+          <ul class="header--bottom__nav">
+            <li>ჩვენი პროდუქტები</li>
+            <li>ჩვენ შესახებ</li>
+            <li>ჩვენი სერვისები</li>
+            <li>
+              <span
+                ><img
+                  src="./icons/icon.svg"
+                  alt="location SVG"
+                  class="location--svg" /></span
+              >ლოკაცია
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header--burger--menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="header--bottom__mobile">
+        <ul>
+          <li>ჩვენი პროდუქტები</li>
+          <li>ჩვენ შესახებ</li>
+          <li>ჩვენი სერვისები</li>
+          <li>ლოკაცია</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- hero -->
+      <section class="section-hero">
+        <div class="hero">
+          <p class="arrow">&#8592;</p>
+          <div class="hero-image"></div>
+          <p class="arrow">&#8594;</p>
+        </div>
+      </section>
+
+      <section class="section-contact-us">
+        <div class="contact-us">
+          <span class="contact-us--text">გამოიწერე ჩვენი <br />სიახლეები</span>
+          <div class="contact-us--input-button--wrapper">
+            <input
+              class="contact-us--input"
+              type="text"
+              placeholder="შეიყვანეთ თქვენი ელ.ფოსტა"
+            />
+            <button class="contact-us--button">გამოწერა</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer--container">
+        <div class="footer--logo">
+          <img src="images/Mugsy's footer icon.png" alt="" />
+        </div>
+        <div class="footer--navigation__desktop">
+          <p class="footer--navigation">ნავიგაცია</p>
+          <div class="footer--navigation__list">
+            <ul>
+              <li>ჩვენი პროდუქტები</li>
+              <li>მაგსი მენიუ</li>
+              <li>მაგსი კაფე</li>
+              <li>კარიერა</li>
+            </ul>
+            <ul>
+              <li>აპლიკაცია</li>
+              <li>სიახლეები</li>
+              <li>რესტორნები</li>
+            </ul>
+            <ul>
+              <li>მაგსიდელივერი</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer--navigation__all">
+          <div class="footer--icon">
+            <img src="icons/facebook.png" alt="" />
+          </div>
+          <div class="footer--icon">
+            <img src="icons/instagram.png" alt="" />
+          </div>
+          <div class="footer--icon">
+            <img src="icons/linkedin.png" alt="" />
+          </div>
+          <div class="footer--icon"><img src="icons/youtube.png" alt="" /></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
