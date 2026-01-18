@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap"
       rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
     />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/mainPage.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/burgerMap.css" />
 
-    <title>Mugsy's burger</title>
+    <title>Document</title>
   </head>
   <body>
     <header class="header">
@@ -23,8 +25,8 @@
           <option value="ru">РУС</option>
         </select>
         <div class="header--top__logo">
-          <a href="./index.html">
-            <img src="./images/logo.png" alt="Mugsy's burger logo" />
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="Mugsy's burger logo" />
           </a>
         </div>
         <div>
@@ -39,11 +41,11 @@
       <div class="header--bottom">
         <nav>
           <ul class="header--bottom__nav">
-            <li><a href="./html/burger.html">ჩვენი პროდუქტები</a></li>
+            <li><a href="./burger.html">ჩვენი პროდუქტები</a></li>
             <li>ჩვენ შესახებ</li>
             <li>ჩვენი სერვისები</li>
             <li>
-              <a href="./html/locations.html">
+              <a href="./locations.html">
                 <span
                   ><img
                     src="../icons/icon.svg"
@@ -62,42 +64,20 @@
       </div>
       <div class="header--bottom__mobile">
         <ul>
-          <li>ჩვენი პროდუქტები</li>
+          <li><a href="./burger.html">ჩვენი პროდუქტები</a></li>
           <li>ჩვენ შესახებ</li>
           <li>ჩვენი სერვისები</li>
           <li>ლოკაცია</li>
         </ul>
       </div>
     </header>
-    <main>
-      <!-- hero -->
-      <section class="section-hero">
-        <div class="hero">
-          <p class="arrow">&#8592;</p>
-          <div class="hero-image"></div>
-          <p class="arrow">&#8594;</p>
-        </div>
-      </section>
 
-      <section class="section-contact-us">
-        <div class="contact-us">
-          <span class="contact-us--text">გამოიწერე ჩვენი <br />სიახლეები</span>
-          <div class="contact-us--input-button--wrapper">
-            <input
-              class="contact-us--input"
-              type="text"
-              placeholder="შეიყვანეთ თქვენი ელ.ფოსტა"
-            />
-            <button class="contact-us--button">გამოწერა</button>
-          </div>
-        </div>
-      </section>
-    </main>
+    <div id="burger-map"></div>
 
     <footer>
       <div class="footer--container">
         <div class="footer--logo">
-          <img src="images/Mugsy's footer icon.png" alt="" />
+          <img src="../images/Mugsy's footer icon.png" alt="" />
         </div>
         <div class="footer--navigation__desktop">
           <p class="footer--navigation">ნავიგაცია</p>
@@ -120,17 +100,26 @@
         </div>
         <div class="footer--navigation__all">
           <div class="footer--icon">
-            <img src="icons/facebook.png" alt="" />
+            <img src="../icons/facebook.png" alt="" />
           </div>
           <div class="footer--icon">
-            <img src="icons/instagram.png" alt="" />
+            <img src="../icons/instagram.png" alt="" />
           </div>
           <div class="footer--icon">
-            <img src="icons/linkedin.png" alt="" />
+            <img src="../icons/linkedin.png" alt="" />
           </div>
-          <div class="footer--icon"><img src="icons/youtube.png" alt="" /></div>
+          <div class="footer--icon">
+            <img src="../icons/youtube.png" alt="" />
+          </div>
         </div>
       </div>
     </footer>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script src="../js/burgerMap.js"></script>
   </body>
 </html>

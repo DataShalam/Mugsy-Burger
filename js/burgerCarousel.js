@@ -3,7 +3,7 @@ async function loadBurgerSlides(count = 10) {
     ".section--burger--carousel__container",
   );
 
-  container.innerHTML = ""; // clear existing slides
+  container.innerHTML = "";
 
   try {
     const requests = Array.from({ length: count }, () =>
@@ -26,7 +26,6 @@ async function loadBurgerSlides(count = 10) {
       container.appendChild(slide);
     });
 
-    // Initialize Splide AFTER slides are added
     new Splide("#burger-carousel", {
       type: "loop",
       perPage: 4,
