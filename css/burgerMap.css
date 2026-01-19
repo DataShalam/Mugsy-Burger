@@ -8,3 +8,10 @@
 
   margin-bottom: 4rem;
 }
+
+@media (max-width: 600px) {
+  #burger-map {
+    width: 100%;
+    height: 400px;
+  }
+}

@@ -1,7 +1,7 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const map = L.map("burger-map").setView([41.7169725, 44.7520336], 14);
+  const map = L.map("burger-map").setView([41.7169725, 44.7590336], 13);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "&copy; OpenStreetMap contributors",

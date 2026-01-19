@@ -223,3 +223,60 @@
   background-position: center;
   border-radius: 12px;
 }
+
+@media (max-width: 600px) {
+  /***********************/
+  /*** Product heading ***/
+  /***********************/
+  .product--headline__title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #000;
+  }
+
+  .product--headline__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product--headline__option {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 800;
+
+    padding: 18px;
+  }
+
+  .product--ingredients__includes {
+    font-size: 12px;
+    margin-left: 12px;
+    position: relative;
+  }
+
+  .rounded--includes {
+    padding: 12px;
+    width: 1px;
+    height: 1px;
+  }
+
+  .rounded--not--includes {
+    padding: 12px;
+    width: 1px;
+    height: 1px;
+  }
+
+  .product--ingredients__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .section--burger--carousel__container {
+    width: 350px;
+  }
+}
